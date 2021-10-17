@@ -1,0 +1,16 @@
+C:\Users\Yarik Scherbatyuk\Documents\OOP_2course_scherbatyukk\lab1\bin\Debug\net5.0\lab1.exe
+C:\Users\Yarik Scherbatyuk\Documents\OOP_2course_scherbatyukk\lab1\bin\Debug\net5.0\lab1.deps.json
+C:\Users\Yarik Scherbatyuk\Documents\OOP_2course_scherbatyukk\lab1\bin\Debug\net5.0\lab1.runtimeconfig.json
+C:\Users\Yarik Scherbatyuk\Documents\OOP_2course_scherbatyukk\lab1\bin\Debug\net5.0\lab1.runtimeconfig.dev.json
+C:\Users\Yarik Scherbatyuk\Documents\OOP_2course_scherbatyukk\lab1\bin\Debug\net5.0\lab1.dll
+C:\Users\Yarik Scherbatyuk\Documents\OOP_2course_scherbatyukk\lab1\bin\Debug\net5.0\ref\lab1.dll
+C:\Users\Yarik Scherbatyuk\Documents\OOP_2course_scherbatyukk\lab1\bin\Debug\net5.0\lab1.pdb
+C:\Users\Yarik Scherbatyuk\Documents\OOP_2course_scherbatyukk\lab1\obj\Debug\net5.0\lab1.csprojAssemblyReference.cache
+C:\Users\Yarik Scherbatyuk\Documents\OOP_2course_scherbatyukk\lab1\obj\Debug\net5.0\lab1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Yarik Scherbatyuk\Documents\OOP_2course_scherbatyukk\lab1\obj\Debug\net5.0\lab1.AssemblyInfoInputs.cache
+C:\Users\Yarik Scherbatyuk\Documents\OOP_2course_scherbatyukk\lab1\obj\Debug\net5.0\lab1.AssemblyInfo.cs
+C:\Users\Yarik Scherbatyuk\Documents\OOP_2course_scherbatyukk\lab1\obj\Debug\net5.0\lab1.csproj.CoreCompileInputs.cache
+C:\Users\Yarik Scherbatyuk\Documents\OOP_2course_scherbatyukk\lab1\obj\Debug\net5.0\lab1.dll
+C:\Users\Yarik Scherbatyuk\Documents\OOP_2course_scherbatyukk\lab1\obj\Debug\net5.0\ref\lab1.dll
+C:\Users\Yarik Scherbatyuk\Documents\OOP_2course_scherbatyukk\lab1\obj\Debug\net5.0\lab1.pdb
+C:\Users\Yarik Scherbatyuk\Documents\OOP_2course_scherbatyukk\lab1\obj\Debug\net5.0\lab1.genruntimeconfig.cache
