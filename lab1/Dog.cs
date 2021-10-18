@@ -16,13 +16,13 @@ namespace lab1
             this.birthDate = DateTime.Now;
             this.consumptionPerDay = consumptionPerDay;
         }
-        public static Dog GetPet(string name, string licenceID, double amountOfFoodToBeFull, double consumptionPerDay)
-        {
-            return new Dog(name, licenceID, amountOfFoodToBeFull, consumptionPerDay); 
-        }
         public static Dog GetPet()
         {
             return new Dog(); 
+        }
+        public static Dog GetPet(string name, string licenceID, double amountOfFoodToBeFull, double consumptionPerDay)
+        {
+            return new Dog(name, licenceID, amountOfFoodToBeFull, consumptionPerDay); 
         }
         public double ConsumptionPerDay
         {
