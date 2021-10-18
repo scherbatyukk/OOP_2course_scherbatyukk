@@ -6,7 +6,7 @@ namespace lab1
     {
         private DateTime birthDate;
         private double consumptionPerDay;
-        private Dog() : base()
+        private Dog()
         {
             this.birthDate = DateTime.Now;
             this.consumptionPerDay = 0;
