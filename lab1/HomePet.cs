@@ -6,6 +6,10 @@ namespace lab1
     {
         protected double amountOfFoodToBeFull;
         protected double currentAmountOfFoodNeeded;
+        static HomePet()
+        {
+            petType = "Lives in a Home";
+        }
         public HomePet(string ownerName, string licenceID, double amountOfFoodToBeFull) : base(ownerName, licenceID)
         {
             if (amountOfFoodToBeFull > 0)
@@ -20,7 +24,6 @@ namespace lab1
         public HomePet() : base()
         {
             this.amountOfFoodToBeFull = 500;
-            petType = "Lives in a Home";
         }
         public void FeedThePet(double foodAmount)
         {

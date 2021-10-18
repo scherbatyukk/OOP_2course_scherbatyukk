@@ -6,6 +6,10 @@ namespace lab1
     {
         protected double amountOfWaterToOvercomeThirst;
         protected double currentAmountOfWaterNeeded;
+        static FarmPet()
+        {
+            petType = "Lives in a Farm";
+        }
         public FarmPet(string ownerName, string licenceID, double amountOfWaterPerDay) : base(ownerName, licenceID)
         {
             if (amountOfWaterPerDay > 0)
@@ -20,7 +24,6 @@ namespace lab1
         public FarmPet() : base()
         {
             this.amountOfWaterToOvercomeThirst = 0;
-            petType = "Lives in a Farm";
         }
         public void FeedThePet(double waterAmount)
         {
