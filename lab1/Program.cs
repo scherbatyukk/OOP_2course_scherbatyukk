@@ -12,25 +12,17 @@ namespace lab1
             Dog dog = Dog.GetPet("Ivan", "OO0000OO", 450, 900);
 
             DisposePets();
-
             Console.WriteLine("\nMemory before creating 10_000 obj: " + GC.GetTotalMemory(false));
-            
             for (int i = 0; i < 10_000; i++)
             {            
                 Pet pet1 = new Pet();
 
                 pet1.Dispose();
             }
-
-            Console.WriteLine($"Memory after creating 10_000 obj: {GC.GetTotalMemory(false)}\n");
-            Console.WriteLine($"Generation of 'dog' obj before collecting: {GC.GetGeneration(dog)}\n");
-
+            Console.WriteLine($"Memory after creating 10_000 obj: {GC.GetTotalMemory(false)}\nGeneration of 'dog' obj before collecting: {GC.GetGeneration(dog)}\n");
             GC.Collect(2);
             GC.WaitForPendingFinalizers();
-            
-            Console.WriteLine($"\nMemory after collecting garbage: {GC.GetTotalMemory(false)}\n");
-            Console.WriteLine($"Generation of 'dog' obj after collecting: {GC.GetGeneration(dog)}");
-            Console.WriteLine($"Garbage Collection count: {GC.CollectionCount(0)}\n");
+            Console.WriteLine($"\nMemory after collecting garbage: {GC.GetTotalMemory(false)}\nGeneration of 'dog' obj after collecting: {GC.GetGeneration(dog)}\nGarbage Collection count: {GC.CollectionCount(0)}\n");
         }
 
         private static void DisposePets()
