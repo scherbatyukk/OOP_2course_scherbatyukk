@@ -16,13 +16,33 @@ namespace lab1
             this.birthDate = DateTime.Now;
             this.consumptionPerDay = consumptionPerDay;
         }
-        public static Horse GetPet()
+        private static int price = 100;
+        private bool bought = false;
+        public static Horse GetPet(int money)
         {
-            return new Horse(); 
+            if(money >= price)
+            {
+                return new Horse(){
+                    bought = true
+                }; 
+            }
+            else
+            {
+                return null;
+            }
         }
-        public static Horse GetPet(string name, string licenceID, double amountOfWaterToOvercomeThirst, double consumptionPerDay)
+        public static Horse GetPet(string name, string licenceID, double amountOfFoodToBeFull, double consumptionPerDay, int money)
         {
-            return new Horse(name, licenceID, amountOfWaterToOvercomeThirst, consumptionPerDay); 
+            if(money >= price)
+            {
+                return new Horse(name, licenceID, amountOfFoodToBeFull, consumptionPerDay){
+                    bought = true
+                };  
+            }
+            else
+            {
+                return null;
+            }
         }
         public double ConsumptionPerDay
         {

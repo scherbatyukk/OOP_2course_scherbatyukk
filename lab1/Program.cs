@@ -9,14 +9,13 @@ namespace lab1
             Pet pet = new Pet("Yaroslav Scherbatyuk", "ABCD1234");
             FarmPet farmPet = new FarmPet("Yaroslav Scherbatyuk", "ABCD1234", 5);
             HomePet homePet = new HomePet("Yaroslav Scherbatyuk", "ABCD1234", 300);
-            Dog dog = Dog.GetPet("Ivan", "OO0000OO", 450, 900);
+            Dog dog = Dog.GetPet("Ivan", "OO0000OO", 450, 900, 120);
 
             DisposePets();
             Console.WriteLine("\nMemory before creating 10_000 obj: " + GC.GetTotalMemory(false));
             for (int i = 0; i < 10_000; i++)
             {            
                 Pet pet1 = new Pet();
-
                 pet1.Dispose();
             }
             Console.WriteLine($"Memory after creating 10_000 obj: {GC.GetTotalMemory(false)}\nGeneration of 'dog' obj before collecting: {GC.GetGeneration(dog)}\n");
@@ -27,8 +26,8 @@ namespace lab1
 
         private static void DisposePets()
         {
-            Horse horse = Horse.GetPet();
-            Dog dog = Dog.GetPet();
+            Horse horse = Horse.GetPet(120);
+            Dog dog = Dog.GetPet(100);
             horse.Dispose();
             dog.Dispose();
             GC.ReRegisterForFinalize(horse);
