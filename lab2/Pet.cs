@@ -42,12 +42,6 @@ namespace lab2
                 disposed = true;
             }
         }
-        // ~Pet()
-        // {
-        //     CleanUp(false);
-
-        //     WriteLine("- Pet destructor called -");
-        // }
         public abstract void Jump(int times);
     }
 }

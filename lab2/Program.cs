@@ -12,7 +12,7 @@ namespace lab2
             oper.FeedUp();
             Order currentFeedInfo = delegate(FeedingOperator oper, FeedingEventArgs fArgs)
             {
-                Console.WriteLine($"Current feeding operator: {oper.Fullname}; Current water amount: {fArgs.WaterAmount} milliliters; Current food amount: {fArgs.FoodAmount} grams");
+                WriteLine($"Current feeding operator: {oper.Fullname}; Current water amount: {fArgs.WaterAmount} milliliters; Current food amount: {fArgs.FoodAmount} grams");
             };
             currentFeedInfo(oper, oper.fArgs);
             WriteLine();
