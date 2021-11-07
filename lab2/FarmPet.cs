@@ -10,20 +10,22 @@ namespace lab2
         {
             petType = "Lives in a Farm";
         }
-        public FarmPet(string ownerName, string licenceID, double amountOfWaterPerDay) : base(ownerName, licenceID)
+        public FarmPet(string ownerName, string licenceID, double amountOfWaterToOvercomeThirst) : base(ownerName, licenceID)
         {
-            if (amountOfWaterPerDay > 0)
+            if (amountOfWaterToOvercomeThirst > 0)
             {
-                this.amountOfWaterToOvercomeThirst = amountOfWaterPerDay;    
+                this.amountOfWaterToOvercomeThirst = amountOfWaterToOvercomeThirst;    
             }
             else
             {
-                this.amountOfWaterToOvercomeThirst = 0;
-            }            
+                this.amountOfWaterToOvercomeThirst = 1000;
+            }  
+            this.currentAmountOfWaterNeeded = this.amountOfWaterToOvercomeThirst;        
         }
         public FarmPet() : base()
         {
-            this.amountOfWaterToOvercomeThirst = 0;
+            this.amountOfWaterToOvercomeThirst = 1000;
+            this.currentAmountOfWaterNeeded = this.amountOfWaterToOvercomeThirst;
         }
         void IFarmPet.WaterThePet(FeedingOperator oper, FeedingEventArgs fArgs)
         {

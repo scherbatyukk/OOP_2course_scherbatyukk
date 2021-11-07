@@ -18,7 +18,7 @@ namespace lab2
             FeedingEventArgs feedArgs = null;
             try
             {
-                Write("Enter amount fo food: ");
+                Write("Enter amount of food: ");
                 foodAmount = Double.Parse(ReadLine());
                 Write("Enter amount of water: ");
                 waterAmount = Double.Parse(ReadLine());
@@ -28,7 +28,7 @@ namespace lab2
             {
                 ForegroundColor = ConsoleColor.Red;
                 WriteLine(ex.Message);
-                WriteLine("Set to default values:\n Amount of water: 1 milliliter\n Charge power: 1 grams");
+                WriteLine("Set to default values:\n Amount of water: 1 milliliter\n Amount of food: 1 grams");
                 ResetColor();
                 feedArgs = new FeedingEventArgs();
             }

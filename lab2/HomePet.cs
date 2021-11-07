@@ -18,12 +18,14 @@ namespace lab2
             }
             else
             {
-                this.amountOfFoodToBeFull = 0;
-            }            
+                this.amountOfFoodToBeFull = 500;
+            }
+            this.currentAmountOfFoodNeeded = this.amountOfFoodToBeFull;
         }
         public HomePet() : base()
         {
             this.amountOfFoodToBeFull = 500;
+            this.currentAmountOfFoodNeeded = this.amountOfFoodToBeFull;
         }
         void IHomePet.FeedThePet(FeedingOperator oper, FeedingEventArgs fArgs)
         {
